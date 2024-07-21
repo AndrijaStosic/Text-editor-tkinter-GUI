@@ -43,7 +43,6 @@ def Open_File():
             if 'text_arrea1' in globals():
                 text_arrea1.delete("1.0", END)
                 text_arrea1.insert(END, file_content)
-                # Add all buttons back if they don't exist
                 if not any(isinstance(widget, Button) for widget in lista_widgeta):
                     New_button = Button(window, text="New file", bg="gray23", fg="Snow2", font=(None, 12), command=Novi_File1)
                     New_button.place(x=10, y=30)
